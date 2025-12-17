@@ -41,12 +41,12 @@
 
 /* Fonts */
 :root {
-  --fs-14: calc(16 / 14 * 1rem);
+  --fs-14: calc(14 / 16 * 1rem);
   --fs-16: calc(16 / 16 * 1rem);
-  --fs-18: calc(16 / 18 * 1rem);
-  --fs-22: calc(16 / 22 * 1rem);
-  --fs-48: calc(16 / 48 * 1rem);
-  --fs-70: calc(16 / 70 * 1rem);
+  --fs-18: calc(18 / 16 * 1rem);
+  --fs-22: calc(22 / 16 * 1rem);
+  --fs-48: calc(48 / 16 * 1rem);
+  --fs-70: calc(70 / 16 * 1rem);
 
   --font-size-header: var(--fs-16);
   --font-size-h1: var(--fs-70);
@@ -63,6 +63,7 @@
   --c-dark-blue: #161c28;
 
   --color-header-bg: var(--c-light);
+  --color-hero-bg: var(--c-light);
   --color-plato-bg: var(--c-white);
   --color-partner-support-bg: var(--c-light-gray);
   --color-products-and-services-bg: var(--c-white);
@@ -86,6 +87,7 @@ body {
 
 h1 {
   font-size: var(--font-size-h1);
+  font-weight: 900;
 }
 
 h2 {
@@ -102,6 +104,7 @@ ul {
 
 .header {
   background-color: var(--color-header-bg);
+  padding-bottom: 105px;
 
   .header__wrapper {
     display: flex;
@@ -131,15 +134,82 @@ ul {
   }
 }
 
+.hero {
+  height: 760px;
+  background-color: var(--color-hero-bg);
+
+  .hero__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero__heading {
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .hero__desc {
+    margin-bottom: 40px;
+    font-size: var(--fs-18);
+  }
+
+  .hero__button {
+    width: 170px;
+    height: 56px;
+    font-size: var(--fs-16);
+  }
+
+  .hero__left-content {
+    width: 40%;
+  }
+
+  .hero__img-container {
+    position: relative;
+  }
+
+  .hero__blue-chart-img {
+    position: absolute;
+    top: 20%;
+    right: -11%;
+  }
+
+  .hero__dvach-img {
+    position: absolute;
+    top: 35%;
+    left: -13%;
+  }
+
+  .hero__cactus-img {
+    position: absolute;
+    top: 40%;
+    right: -12%;
+  }
+
+  .hero__cup-img {
+    position: absolute;
+    bottom: -5%;
+    left: 20%;
+  }
+
+  .hero__rocket-img {
+    position: absolute;
+    bottom: -5%;
+    right: 6%;
+  }
+}
+
 .wrapper {
-  width: calc(100% - 156 * 2);
+  width: calc(100% - 156px * 2);
+  margin-inline: auto;
 }
 
 .button {
-  padding: 10px 24px;
+  padding: 1em 24px;
   font-weight: 600;
   border: none;
-  border-radius: 20px;
+  border-radius: 20em;
   color: var(--color-btn-text);
   background-color: var(--color-btn);
+  cursor: pointer;
 }
