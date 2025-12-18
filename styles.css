@@ -72,7 +72,7 @@
   --color-hero-bg: var(--c-light);
   --color-welcome-bg: var(--c-white);
   --color-support-bg: var(--c-light-gray);
-  --color-products-and-services-bg: var(--c-white);
+  --color-products-bg: var(--c-white);
   --color-specifications-bg: var(--c-light-gray);
   --color-our-team-bg: var(--c-white);
   --color-footer: var(--c-dark-blue);
@@ -82,6 +82,7 @@
 
   --color-text-poppins: var(--c-dark-gray);
   --color-text-support__text: var(--c-gray);
+  --color-text-products__desc: var(--c-gray);
 }
 
 * {
@@ -137,6 +138,11 @@ ul {
   list-style: none;
 }
 
+.wrapper {
+  width: calc(100% - 156px * 2);
+  margin-inline: auto;
+}
+
 .header {
   background-color: var(--color-header-bg);
   padding-bottom: 105px;
@@ -161,6 +167,10 @@ ul {
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
+  }
+
+  .header__button {
+    font-size: var(--fs-14);
   }
 
   .header__right-links,
@@ -285,6 +295,7 @@ ul {
   .support__desc {
     width: 90%;
     margin-bottom: 80px;
+    font-size: var(--fs-16);
   }
 
   .support__ratings {
@@ -302,6 +313,14 @@ ul {
     display: flex;
   }
 
+  .support__rating-text {
+    font-size: var(--fs-18);
+  }
+
+  .support__rating-entity {
+    font-size: var(--fs-18);
+  }
+
   .support__right {
     display: flex;
     flex-direction: column;
@@ -315,6 +334,10 @@ ul {
 
   .support__right-heading {
     margin-bottom: 15px;
+  }
+
+  .support__right-desc {
+    font-size: var(--fs-18);
   }
 
   .support__icon-container {
@@ -348,9 +371,41 @@ ul {
   }
 }
 
-.wrapper {
-  width: calc(100% - 156px * 2);
-  margin-inline: auto;
+.products {
+  padding-block: 120px;
+  background-color: var(--color-products-bg);
+}
+
+.products__heading {
+  margin-bottom: 40px;
+}
+
+.products__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.products__block {
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.products__product-heading {
+  margin-block: 16px;
+}
+
+.products__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.products__product-desc {
+  color: var(--color-text-products__desc);
+  font-size: var(--fs-16);
 }
 
 .button {
