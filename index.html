@@ -13,8 +13,8 @@
         <nav class="nav">
           <ul class="header__nav-links">
             <li><a href="">Home</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">Specifications</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#specifications">Specifications</a></li>
             <li><a href="">Statistics</a></li>
             <li><a href="">Contact us</a></li>
           </ul>
@@ -245,7 +245,7 @@
           </div>
         </div>
       </section>
-      <section class="products">
+      <section id="products" class="products">
         <div class="wrapper">
           <h2 class="products__heading">Products and services</h2>
           <div class="products__cards">
@@ -306,7 +306,7 @@
           </div>
         </div>
       </section>
-      <section class="specifications">
+      <section id="specifications" class="specifications">
         <div class="wrapper">
           <h2 class="specifications__heading">Specifications</h2>
           <ul>
@@ -403,6 +403,82 @@
           <button class="team__button button" type="button">
             Show all contacts
           </button>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__wrapper wrapper">
+          <h2 class="contacts__heading">Get in touch</h2>
+          <div class="contacts__content">
+            <div class="contacts__content-left">
+              <h3 class="contacts__content-left-heading">Send a message</h3>
+              <p class="contacts__content-left-text contacts__text">
+                Specifications
+              </p>
+              <form class="contacts__form" action="" method="POST">
+                <div class="contacts__form-inputs">
+                  <input
+                    class="contacts__form-input"
+                    type="text"
+                    placeholder="Name"
+                  />
+                  <input
+                    class="contacts__form-input"
+                    type="email"
+                    placeholder="Email Address"
+                  />
+                  <input
+                    class="contacts__form-input"
+                    type="text"
+                    placeholder="City"
+                  />
+                  <input
+                    class="contacts__form-input"
+                    type="tel"
+                    placeholder="Phone number"
+                  />
+                  <input
+                    class="contacts__form-input contacts__form-input-message"
+                    type="text"
+                    placeholder="Message"
+                  />
+                </div>
+                <button class="contacts__form-button button" type="submit">
+                  Show all products
+                </button>
+              </form>
+            </div>
+            <div class="contacts__content-right">
+              <div class="contacts__content-right-block">
+                <h3>Call Us</h3>
+                <p class="contacts__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the.
+                </p>
+                <strong
+                  ><a class="contacts__text" href="tel:(48) 943-943-854"
+                    >(48) 943-943-854</a
+                  ></strong
+                >
+              </div>
+              <div class="contacts__content-right-block">
+                <h3>Visit Us</h3>
+                <p class="contacts__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the.
+                </p>
+                <strong><a class="contacts__text" href="">Address</a></strong>
+              </div>
+              <div class="contacts__content-right-block">
+                <h3>Live chat</h3>
+                <p class="contacts__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the.
+                </p>
+                <strong><a class="contacts__text" href="">Live chat</a></strong>
+              </div>
+            </div>
+          </div>
+          <img class="contacts__map-img" src="img/map.png" alt="map" />
         </div>
       </section>
     </main>
