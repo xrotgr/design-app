@@ -53,9 +53,6 @@
   --font-size-h1: var(--fs-70);
   --font-size-h2: var(--fs-48);
   --font-size-h3: var(--fs-24);
-  --font-size-h4: var(--fs-22);
-  --font-size-h5: var(--fs-18);
-  --font-size-h6: var(--fs-16);
 }
 
 /* Colors */
@@ -100,6 +97,7 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 a {
@@ -128,17 +126,6 @@ h3 {
 
 h4 {
   font-size: var(--font-size-h4);
-  font-weight: 700;
-}
-
-h5 {
-  font-size: var(--font-size-h5);
-  font-weight: 700;
-}
-
-h6 {
-  font-size: var(--font-size-h6);
-  font-weight: 700;
 }
 
 ul {
@@ -188,11 +175,24 @@ ul {
   .header__button {
     font-size: var(--fs-14);
   }
+
+  @media (max-width: 1000px) {
+    .header__wrapper {
+      width: calc(100% - 156px * 2);
+      margin-inline: auto;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+    .header__right-links {
+      width: auto;
+    }
+  }
 }
 
 .hero {
-  height: 760px;
-  margin-bottom: 120px;
+  padding-bottom: 130px;
   background-color: var(--color-hero-bg);
 
   .hero__wrapper {
@@ -255,11 +255,29 @@ ul {
     bottom: -5%;
     right: 6%;
   }
+
+  @media (max-width: 1182px) {
+    .hero {
+      height: 2px;
+    }
+
+    .hero__img-container {
+      display: none;
+    }
+
+    .hero__wrapper {
+      display: block;
+    }
+
+    .hero__left-content {
+      width: 100%;
+    }
+  }
 }
 
 .welcome {
   background-color: var(--color-welcome-bg);
-  padding-bottom: 120px;
+  padding-block: 120px;
 
   .welcome__wrapper {
     display: flex;
@@ -403,10 +421,12 @@ ul {
   }
 
   .products__product-heading {
+    font-size: var(--fs-22);
+    font-weight: 700;
     margin-block: 16px;
   }
 
-  .products__right {
+  .products__column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -429,6 +449,11 @@ ul {
 
   .specifications__text {
     font-size: var(--fs-16);
+  }
+
+  .specifications__text-bold {
+    font-size: var(--fs-18);
+    font-weight: 700;
   }
 
   .specifications__link {
@@ -502,12 +527,6 @@ ul {
   padding-block: 80px;
   background-color: var(--color-contact-bg);
   color: var(--color-text-white);
-
-  .contacts__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-  }
 
   .contacts__heading {
     margin-bottom: 40px;
@@ -614,8 +633,15 @@ ul {
     line-height: 100%;
   }
 
-  .footer__heading-h6 {
+  .footer__heading-strong {
+    display: block;
+    font-size: var(--fs-16);
+    font-weight: 700;
     margin-bottom: 16px;
+  }
+
+  .footer__heading-contact {
+    font-size: var(--fs-16);
   }
 
   .footer__left {
