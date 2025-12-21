@@ -107,6 +107,10 @@ a {
   color: inherit;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 h1 {
   font-size: var(--font-size-h1);
   font-weight: 900;
@@ -179,6 +183,10 @@ ul {
   .header__right-links,
   .header__logo {
     width: 224px;
+  }
+
+  .header__button {
+    font-size: var(--fs-14);
   }
 }
 
