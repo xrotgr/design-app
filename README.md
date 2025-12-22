@@ -22,3 +22,7 @@ npx serve
 
 - index.html
 - styles.css
+
+## Deployment
+
+https://github.com/xrotgr/design-app
