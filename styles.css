@@ -354,9 +354,10 @@ ul {
   }
 
   .support__right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    column-gap: 22px;
+    row-gap: 30px;
   }
 
   .support__right-statistics {
