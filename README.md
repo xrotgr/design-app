@@ -7,7 +7,7 @@ This is a simple website written in HTML and CSS.
 1. Clone the repository:
 
 ```bash
- git https://github.com/xrotgr/design-app.git
+ git clone https://github.com/xrotgr/design-app.git
 ```
 
 ## Usage
@@ -25,4 +25,4 @@ npx serve
 
 ## Deployment
 
-https://github.com/xrotgr/design-app
+https://xrotgr.github.io/design-app/
